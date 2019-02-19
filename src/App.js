@@ -27,8 +27,10 @@ class App extends Component {
   _renderMovies = () => {
     const movies = this.state.movies.map(movie => (
       <Movie
-        title={movie.title}
-        poster={movie.large_cover_image}
+        title={movie.title_english}
+        poster={movie.medium_cover_image}
+        genres={movie.genres}
+        synopsis={movie.synopsis}
         key={movie.id}
       />
     ));

@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-const Poster = ({ poster }) => {
+const Poster = ({ poster, alt }) => {
   return (
     <div>
-      <img src={poster} alt="Poster" />
+      <img src={poster} alt={alt} title={alt} />
     </div>
   );
 };
@@ -11,4 +11,5 @@ const Poster = ({ poster }) => {
 Poster.propTypes = {
   poster: PropTypes.string.isRequired
 };
+
 export default Poster;
