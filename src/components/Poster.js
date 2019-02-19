@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-const Poster = props => {
+const Poster = ({ poster }) => {
   return (
     <div>
-      <img src={props.poster} alt="Poster" />
+      <img src={poster} alt="Poster" />
     </div>
   );
 };
